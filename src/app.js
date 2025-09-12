@@ -4,7 +4,7 @@ const mongodb = require('./config/db');
 
 const app = express();
 const PORT = process.env.PORT || 3000;
-const HOST = process.env.HOST || 'localhost';
+const swaggerRoute = require('./routes/swagger');
 
 // Middleware
 app.use(express.json());
@@ -25,6 +25,7 @@ app.get('/', (req, res) => {
     res.send('Welcome to the Contacts API');
 });
 app.use('/api/contacts', contactsRoutes);
+app.use('/api-docs', swaggerRoute);
 
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);

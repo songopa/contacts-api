@@ -22,7 +22,6 @@ This project provides a RESTful API for storing and retrieving information about
 - Node.js
 - Express.js
 - MongoDB
-- Mongoose
 - Swagger for API documentation
 
 ## Setup Instructions

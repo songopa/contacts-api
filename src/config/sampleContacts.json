@@ -3,70 +3,70 @@
         "firstName": "Alice",
         "lastName": "Johnson",
         "email": "alice.johnson@example.com",
-        "phone": "555-123-4567",
-        "address": "123 Maple St, Springfield, IL"
+        "favoriteColor": "Blue",
+        "birthday": "1990-03-15"
     },
     {
         "firstName": "Bob",
         "lastName": "Smith",
         "email": "bob.smith@example.com",
-        "phone": "555-234-5678",
-        "address": "456 Oak Ave, Lincoln, NE"
+        "favoriteColor": "Green",
+        "birthday": "1985-07-22"
     },
     {
         "firstName": "Carol",
         "lastName": "Williams",
         "email": "carol.williams@example.com",
-        "phone": "555-345-6789",
-        "address": "789 Pine Rd, Madison, WI"
+        "favoriteColor": "Red",
+        "birthday": "1992-11-05"
     },
     {
         "firstName": "David",
         "lastName": "Brown",
         "email": "david.brown@example.com",
-        "phone": "555-456-7890",
-        "address": "321 Cedar Blvd, Austin, TX"
+        "favoriteColor": "Yellow",
+        "birthday": "1988-02-28"
     },
     {
         "firstName": "Eva",
         "lastName": "Davis",
         "email": "eva.davis@example.com",
-        "phone": "555-567-8901",
-        "address": "654 Birch Ln, Salem, OR"
+        "favoriteColor": "Purple",
+        "birthday": "1995-09-10"
     },
     {
         "firstName": "Frank",
         "lastName": "Miller",
         "email": "frank.miller@example.com",
-        "phone": "555-678-9012",
-        "address": "987 Spruce Dr, Denver, CO"
+        "favoriteColor": "Orange",
+        "birthday": "1983-12-17"
     },
     {
         "firstName": "Grace",
         "lastName": "Wilson",
         "email": "grace.wilson@example.com",
-        "phone": "555-789-0123",
-        "address": "159 Elm St, Boise, ID"
+        "favoriteColor": "Pink",
+        "birthday": "1991-05-03"
     },
     {
         "firstName": "Henry",
         "lastName": "Moore",
         "email": "henry.moore@example.com",
-        "phone": "555-890-1234",
-        "address": "753 Willow Ave, Helena, MT"
+        "favoriteColor": "Teal",
+        "birthday": "1987-08-14"
     },
     {
         "firstName": "Ivy",
         "lastName": "Taylor",
         "email": "ivy.taylor@example.com",
-        "phone": "555-901-2345",
-        "address": "852 Aspen Ct, Fargo, ND"
+        "favoriteColor": "Brown",
+        "birthday": "1993-04-19"
     },
     {
         "firstName": "Jack",
         "lastName": "Anderson",
         "email": "jack.anderson@example.com",
-        "phone": "555-012-3456",
-        "address": "951 Poplar Way, Cheyenne"
+        "favoriteColor": "Gray",
+        "birthday": "1989-10-30"
     }
 ]
