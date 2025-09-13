@@ -60,7 +60,7 @@ contC.deleteContact = async function (req, res) {
         if (result.deletedCount === 0) {
             return res.status(404).json({ message: 'Contact not found' });
         }
-        res.status(200).json({message: 'Contact deleted' });
+        res.status(204).send();
     } catch (error) {
         res.status(500).json({ message: error.message });
     }
