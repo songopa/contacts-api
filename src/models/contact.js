@@ -15,7 +15,7 @@ async function connect() {
 
 async function insertContact(contact) {
     const col = await connect();
-    // You may want to add validation here
+    
     return col.insertOne(contact);
 }
 
@@ -30,6 +30,7 @@ async function findAllContacts() {
 }
 
 module.exports = {
+    connect,
     insertContact,
     findContactByEmail,
     findAllContacts

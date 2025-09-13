@@ -2,7 +2,7 @@ const { ObjectId } = require('mongodb');
 const contactModel = require('../models/contact');
 
 const contC = {}
-contC.createContact = async function(req, res) {
+contC.createContact = async function (req, res) {
     try {
         const result = await contactModel.insertContact(req.body);
         res.status(201).json({ _id: result.insertedId, ...req.body });
@@ -11,7 +11,7 @@ contC.createContact = async function(req, res) {
     }
 }
 
-contC.getContacts = async function(req, res) {
+contC.getContacts = async function (req, res) {
     try {
         const contacts = await contactModel.findAllContacts();
         res.status(200).json(contacts);
@@ -35,16 +35,19 @@ contC.getContactById = async function (req, res) {
 
 contC.updateContact = async function (req, res) {
     try {
+        if (!req.body || Object.keys(req.body).length === 0) {
+            return res.status(400).json({ message: 'Request body is missing or empty.' });
+        }
         const col = await contactModel.connect();
         const result = await col.findOneAndUpdate(
             { _id: new ObjectId(req.params.id) },
             { $set: req.body },
             { returnDocument: 'after' }
-        );
-        if (!result.value) {
+        )
+        if (!result) {
             return res.status(404).json({ message: 'Contact not found' });
         }
-        res.status(200).json(result.value);
+        res.status(200).json(result);
     } catch (error) {
         res.status(400).json({ message: error.message });
     }
@@ -57,7 +60,7 @@ contC.deleteContact = async function (req, res) {
         if (result.deletedCount === 0) {
             return res.status(404).json({ message: 'Contact not found' });
         }
-        res.status(204).send();
+        res.status(200).json({message: 'Contact deleted' });
     } catch (error) {
         res.status(500).json({ message: error.message });
     }
