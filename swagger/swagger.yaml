@@ -4,7 +4,10 @@ info:
   description: API for storing and retrieving contact information.
   version: 1.0.0
 servers:
-  - url: https://contacts-api-h2ow.onrender.com/api-docs
+  - url: https://contacts-api-h2ow.onrender.com/api
+    description: Production server
+  - url: http://localhost:3000/api
+    description: Local development server
 paths:
   /contacts:
     get:
